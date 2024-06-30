@@ -112,31 +112,91 @@
 // console.log(subu);
 // console.log(typeof subu);
 
-// string method
-const result = "helo world";
+// // string method
+// const result = "helo world";
 
-// length
-console.log(result.length);
+// // length
+// console.log(result.length);
 
-// charAt
-console.log(result.charAt(2));
+// // charAt
+// console.log(result.charAt(2));
 
-// indexOf
-console.log(result.indexOf("o"));
-// lastindexOf
-console.log(result.lastIndexOf("l"));
+// // indexOf
+// console.log(result.indexOf("o"));
+// // lastindexOf
+// console.log(result.lastIndexOf("l"));
 
-// lowercase
-console.log(result.toLowerCase());
+// // lowercase
+// console.log(result.toLowerCase());
 
-// touppercase
-console.log(result.toUpperCase());
+// // touppercase
+// console.log(result.toUpperCase());
 
-// replace
-console.log(result.replace("world","everything"));
+// // replace
+// console.log(result.replace("world","everything"));
 
-// includes
-console.log(result.includes("world"));
+// // includes
+// console.log(result.includes("world"));
 
-// slice
-console.log(result.slice(1,6));
+// // slice
+// console.log(result.slice(1,6));
+
+// // concat
+// console.log(result.concat("sleepy"));
+
+// let output ="             hello bidarthi";
+// console.log(output.trim());
+
+// // spilt
+// console.log(result.split(" "));
+
+
+// concatination
+// let x ="helo world";
+// let y=" everything";
+// console.log(x+y);
+
+// const a =90;
+// const b =80;
+
+// const result =a+b;
+
+// console.log("the sum of two number is"+result);
+// // template literals
+// console.log(`the sum of two number is : ${result}`);
+
+
+// let y= 90;
+// y= y+10;
+// console.log(y);
+
+// let x= 90;
+// x+=50;
+// console.log(x);
+
+// let a = 10;
+// let b = 5;
+// let c="10";
+
+// console.log(a==c);
+// console.log(a===c);
+// console.log(a!=b);
+// console.log(a!==c);
+
+
+// let ageGroup =19;
+// console.log(ageGroup>=18?"eligible":"uneligible");
+
+let x="0";
+let y= +x;
+console.log(y);
+console.log(typeof y);
+
+
+
+const obj={
+    name: "John",
+    ageGroup: 18,
+};
+delete obj.name;
+console.log(obj);
