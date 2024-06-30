@@ -59,3 +59,84 @@
 // console.log(output);
 // console.log(typeof output);
 
+// let x =8.68;
+// console.log(x);
+// console.log(typeof x);
+
+// type conversions
+// const result = "123";
+// const result = 123;
+// const output = Number(result);
+// const output= parseInt(result);
+// const output= parseFloat(result); 
+// const output = String(result);
+// const output = result.toString();
+// console.log(output);
+// console.log(typeof output);
+
+
+// const ismarried = false;
+// const ans = String(ismarried);
+// console.log(ans);
+// console.log(typeof ans);
+
+
+
+// object
+
+
+// const obj ={
+//     name:"ramo",
+//     age:34,
+//     isMarried:false,
+//     occupation:"dancer",
+// };
+// console.log(obj);
+// console.log(typeof obj);
+
+// const arr =[1,2,3,4,5];
+// console.log(arr);
+// console.log(typeof arr);
+
+// const date = new Date();
+// console.log(date);
+// console.log(typeof date);
+
+
+// // done automatically
+// const num =1+"1";
+// console.log(num);
+// console.log(typeof num);
+
+// const subu=4-"2";
+// console.log(subu);
+// console.log(typeof subu);
+
+// string method
+const result = "helo world";
+
+// length
+console.log(result.length);
+
+// charAt
+console.log(result.charAt(2));
+
+// indexOf
+console.log(result.indexOf("o"));
+// lastindexOf
+console.log(result.lastIndexOf("l"));
+
+// lowercase
+console.log(result.toLowerCase());
+
+// touppercase
+console.log(result.toUpperCase());
+
+// replace
+console.log(result.replace("world","everything"));
+
+// includes
+console.log(result.includes("world"));
+
+// slice
+console.log(result.slice(1,6));
