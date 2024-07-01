@@ -187,16 +187,59 @@
 // let ageGroup =19;
 // console.log(ageGroup>=18?"eligible":"uneligible");
 
-let x="0";
-let y= +x;
-console.log(y);
-console.log(typeof y);
+// let x="0";
+// let y= +x;
+// console.log(y);
+// console.log(typeof y);
 
 
 
-const obj={
-    name: "John",
-    ageGroup: 18,
-};
-delete obj.name;
-console.log(obj);
+// const obj={
+//     name: "John",
+//     ageGroup: 18,
+// };
+// delete obj.name;
+// console.log(obj);
+
+// let email = "john@example.com";
+// let password = "password";
+
+// if(email === "john@example.com"&&password==="password"){
+//     console.log("login suceessfully");
+
+// }
+// else{
+//     console.log("login unauthenticated");
+// }
+
+// if(email !== "john@example.com" || password !== "pasword"){
+//     console.log("login unauthenticated");
+// }
+
+// see grade check
+// let grade =85;
+// if(grade>=90&&grade<=100){
+//     console.log("Grade: A" );
+// }else if(grade>=80&&grade<=90){
+//     console.log("Grade: B" );
+// }else if(grade>=70&&grade<=80){
+//     console.log("Grade: C" );
+// }else{
+//     console.log("Grade: NG" );
+// }
+
+
+// let weather = "sunny";
+
+// if(weather==="sunny"){
+//     console.log(weather);
+// }
+// else if(weather==="winter"){
+//     console.log(weather);   
+// }
+// else if(weather==="rainy"){
+//     console.log(weather);
+// }
+// else{
+//     console.log("invalid weather");
+// }
