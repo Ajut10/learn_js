@@ -293,31 +293,31 @@
 //         break;
 // }
 
-// let status =200;
+let status =200;
 
-// switch (status) {
-//     case 201:
-//     console.log("created");
-//     break;
-//     case 400:
-//         console.log("Bad request");
-//         break;
-//     case 401:
-//         console.log("Unauthorized");
-//         break;
-//     case 403:
-//         console.log("Forbidden");
-//         break;
-//     case 500:
-//         console.log("Internal Server Error");
-//         break;
-//     case 200:
-//         console.log("OK");
-//         break;
-//     default:
-//         console.log("no status");
-//         break;
+switch (status) {
+    case 201:
+    console.log("created");
+    break;
+    case 400:
+        console.log("Bad request");
+        break;
+    case 401:
+        console.log("Unauthorized");
+        break;
+    case 403:
+        console.log("Forbidden");
+        break;
+    case 500:
+        console.log("Internal Server Error");
+        break;
+    case 200:
+        console.log("OK");
+        break;
+    default:
+        console.log("no status");
+        break;
 
-// }
+}
 
 
