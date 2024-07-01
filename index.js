@@ -293,31 +293,68 @@
 //         break;
 // }
 
-let status =200;
+// let status =200;
 
-switch (status) {
-    case 201:
-    console.log("created");
-    break;
-    case 400:
-        console.log("Bad request");
-        break;
-    case 401:
-        console.log("Unauthorized");
-        break;
-    case 403:
-        console.log("Forbidden");
-        break;
-    case 500:
-        console.log("Internal Server Error");
-        break;
-    case 200:
-        console.log("OK");
-        break;
-    default:
-        console.log("no status");
-        break;
+// switch (status) {
+//     case 201:
+//     console.log("created");
+//     break;
+//     case 400:
+//         console.log("Bad request");
+//         break;
+//     case 401:
+//         console.log("Unauthorized");
+//         break;
+//     case 403:
+//         console.log("Forbidden");
+//         break;
+//     case 500:
+//         console.log("Internal Server Error");
+//         break;
+//     case 200:
+//         console.log("OK");
+//         break;
+//     default:
+//         console.log("no status");
+//         break;
 
-}
+// }
+
+// loop
+
+// let i =1;
+// let b =3
+// for(;i<10;i++){
+//     console.log(  `i love javascript ${i}`);
+// }
+
+// for(let i=1;i<=10;i++){
+//     console.log( `3*${i}=${3 * i}`);
+// }
+
+// for (let i=1;i<=20;i++){
+//     if(i%2 ===0){
+//         console.log(`even number ${i}`); 
+//     }else{
+//         console.log(`odd number ${i}`);
+
+//     }
+// }
 
 
+// const arr = [3,2,4,5,6,7,8,9,10,11];
+// let sumy =0;
+// for (let i=0;i<arr.length;i){
+//     sumy += arr[i];
+
+// }
+// console.log("asd"+sumy);
+
+// let i=0
+// while(i<=0  ){
+//     console.log(i);
+//     i++;
+// }
+
+const arr = [1,2,3,4,5,6,7];
+console.log(arr);
