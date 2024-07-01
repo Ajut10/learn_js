@@ -243,3 +243,81 @@
 // else{
 //     console.log("invalid weather");
 // }
+
+
+// switch
+// let  role = "super admin";
+// switch (role) {
+//     case "super admin":
+//         console.log(role);
+//         break;
+//     case "buyer":
+//         console.log("buyer");;
+//         break;
+//     case "seller":
+//         console.log("seller");
+//         break;
+//     default:
+//         console.log("invalid role");
+//         break;
+// }
+
+// let day = "Sun";
+// let date = new Date().getDay();
+// // console.log(date);
+// switch (date) {
+//     case 0:
+//         console.log("sun");
+//         break;
+//     case 1:
+//         console.log("Mon");
+//         break;
+//     case 2:
+//         console.log("Tue");
+//         break;
+//     case 3:
+//         console.log("Wed");
+//         break;
+//     case 4:
+//         console.log("Thu");
+//         break;
+//     case 5:
+//         console.log("Fri");
+//         break;
+//     case 5:
+//         console.log("Sat");
+//         break;
+
+//     default:
+//         console.log("no date");
+//         break;
+// }
+
+// let status =200;
+
+// switch (status) {
+//     case 201:
+//     console.log("created");
+//     break;
+//     case 400:
+//         console.log("Bad request");
+//         break;
+//     case 401:
+//         console.log("Unauthorized");
+//         break;
+//     case 403:
+//         console.log("Forbidden");
+//         break;
+//     case 500:
+//         console.log("Internal Server Error");
+//         break;
+//     case 200:
+//         console.log("OK");
+//         break;
+//     default:
+//         console.log("no status");
+//         break;
+
+// }
+
+
