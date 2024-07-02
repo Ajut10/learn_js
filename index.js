@@ -11,13 +11,10 @@
 //  y=100;
 // console.log(y);
 
-
 // const
 // const z=234;
 
 // console.log(z);
-
-
 
 // Data types
 // string
@@ -68,22 +65,18 @@
 // const result = 123;
 // const output = Number(result);
 // const output= parseInt(result);
-// const output= parseFloat(result); 
+// const output= parseFloat(result);
 // const output = String(result);
 // const output = result.toString();
 // console.log(output);
 // console.log(typeof output);
-
 
 // const ismarried = false;
 // const ans = String(ismarried);
 // console.log(ans);
 // console.log(typeof ans);
 
-
-
 // object
-
 
 // const obj ={
 //     name:"ramo",
@@ -101,7 +94,6 @@
 // const date = new Date();
 // console.log(date);
 // console.log(typeof date);
-
 
 // // done automatically
 // const num =1+"1";
@@ -150,7 +142,6 @@
 // // spilt
 // console.log(result.split(" "));
 
-
 // concatination
 // let x ="helo world";
 // let y=" everything";
@@ -164,7 +155,6 @@
 // console.log("the sum of two number is"+result);
 // // template literals
 // console.log(`the sum of two number is : ${result}`);
-
 
 // let y= 90;
 // y= y+10;
@@ -183,7 +173,6 @@
 // console.log(a!=b);
 // console.log(a!==c);
 
-
 // let ageGroup =19;
 // console.log(ageGroup>=18?"eligible":"uneligible");
 
@@ -191,8 +180,6 @@
 // let y= +x;
 // console.log(y);
 // console.log(typeof y);
-
-
 
 // const obj={
 //     name: "John",
@@ -228,14 +215,13 @@
 //     console.log("Grade: NG" );
 // }
 
-
 // let weather = "sunny";
 
 // if(weather==="sunny"){
 //     console.log(weather);
 // }
 // else if(weather==="winter"){
-//     console.log(weather);   
+//     console.log(weather);
 // }
 // else if(weather==="rainy"){
 //     console.log(weather);
@@ -243,7 +229,6 @@
 // else{
 //     console.log("invalid weather");
 // }
-
 
 // switch
 // let  role = "super admin";
@@ -334,13 +319,12 @@
 
 // for (let i=1;i<=20;i++){
 //     if(i%2 ===0){
-//         console.log(`even number ${i}`); 
+//         console.log(`even number ${i}`);
 //     }else{
 //         console.log(`odd number ${i}`);
 
 //     }
 // }
-
 
 // const arr = [3,2,4,5,6,7,8,9,10,11];
 // let sumy =0;
@@ -356,5 +340,69 @@
 //     i++;
 // }
 
-const arr = [1,2,3,4,5,6,7];
-console.log(arr);
+// const arr = [1, 2, 3, 4, 5, 6, 7,"abc"];
+// console.log(arr);
+// console.log(arr.length);
+// console.log(typeof arr);
+
+// const arr =[3,2,4,5,1,7,8];
+// console.log(arr.length);
+// console.log(arr.push(1));
+// let result = arr.pop();
+// console.log(arr);
+
+
+// // shift
+
+// arr.shift();
+// console.log(arr);
+
+// // unshift
+// arr.unshift(1);
+// console.log(arr);
+
+// // includes
+// let remove =arr.includes(1);
+// console.log(remove);
+
+// join
+// const out =['a', 'b', 'c'];
+
+// console.log(out.join('-'));
+// console.log(out.join(','));
+// console.log(out.join(' '));
+// console.log(out.join(' '));
+
+// splice
+// const jorr =['a', 'b', 'c','d'];
+// jorr.splice(1,3);
+// console.log(jorr);
+
+// slice
+// let result = [1,2,3,4,5,6,7,8 ,3,9];
+// let pov = result.slice(1,4);
+// console.log(pov);
+
+
+// //
+// let prr = result.indexOf(3);
+// console.log(prr);
+
+// // last indexof
+// let brr= result.lastIndexOf(3);
+// console.log(brr);
+
+
+// let arr = [];
+// let sum =0;
+// for (let i=1; i<=10; i++){
+//     arr.push(i);
+//     // sum += arr[i];
+// }
+// console.log(arr);
+
+// for (let i=0; i<arr.length; i++) {
+//     sum += arr[i];}
+
+//     let result= 2*sum;
+// console.log(`sum=${sum} multy=${result}`);
