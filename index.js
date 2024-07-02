@@ -351,7 +351,6 @@
 // let result = arr.pop();
 // console.log(arr);
 
-
 // // shift
 
 // arr.shift();
@@ -383,7 +382,6 @@
 // let pov = result.slice(1,4);
 // console.log(pov);
 
-
 // //
 // let prr = result.indexOf(3);
 // console.log(prr);
@@ -391,7 +389,6 @@
 // // last indexof
 // let brr= result.lastIndexOf(3);
 // console.log(brr);
-
 
 // let arr = [];
 // let sum =0;
@@ -406,3 +403,35 @@
 
 //     let result= 2*sum;
 // console.log(`sum=${sum} multy=${result}`);
+
+// object
+const person = {
+  name: "John",
+  age: 34,
+  occupation: "farmworker",
+  education: "business",
+  isMarried: false,
+  address: {
+    street: "bagbazar",
+    city: "ktm",
+    country: "Usa",
+    planet: {
+      name: "earth",
+    },
+  },
+  gree: function () {
+    console.log(`My Name: ${this.name} and My age: ${this.age}`);
+  },
+};
+const {
+  name,
+  age,
+  occupation,
+  education,
+  isMarried,
+  address: { street, city, country },
+} = person;
+// person.gree();
+console.log(name, age, occupation);
+// console.log(person.address);
+// console.log(person);
