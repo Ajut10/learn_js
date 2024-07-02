@@ -405,33 +405,76 @@
 // console.log(`sum=${sum} multy=${result}`);
 
 // object
-const person = {
-  name: "John",
-  age: 34,
-  occupation: "farmworker",
-  education: "business",
-  isMarried: false,
-  address: {
-    street: "bagbazar",
-    city: "ktm",
-    country: "Usa",
-    planet: {
-      name: "earth",
-    },
-  },
-  gree: function () {
-    console.log(`My Name: ${this.name} and My age: ${this.age}`);
-  },
-};
-const {
-  name,
-  age,
-  occupation,
-  education,
-  isMarried,
-  address: { street, city, country },
-} = person;
-// person.gree();
-console.log(name, age, occupation);
+// const person = {
+//   name: "John",
+//   age: 34,
+//   occupation: "farmworker",
+//   education: "business",
+//   isMarried: false,
+//   address: {
+//     street: "bagbazar",
+//     city: "ktm",
+//     country: "Usa",
+//     planet: {
+//       name: "earth",
+//     },
+//   },
+//   gree: function () {
+//     console.log(`My Name: ${this.name} and My age: ${this.age}`);
+//   },
+// };
+// const {
+//   name,
+//   age,
+//   occupation,
+//   education,
+//   isMarried,
+//   address: { street, city, country },
+// } = person;
+// // person.gree();
+// console.log(name, age, occupation);
 // console.log(person.address);
 // console.log(person);
+
+// function
+// function myfunction(){
+//     console.log("my function");
+// }
+// myfunction();
+
+// function urfunc(a,b){
+//     return a+b;
+// }
+// console.log(urfunc(3,4));
+
+// function area(r){
+//     return Math.PI * r* r ;
+// }
+// let result=area(67);
+// console.log(`area = ${result}`);
+
+// Calcuate total
+// function CalcuateTotal(cartitems, taxrate) {
+//   let total = 0;
+//   for (let i = 0; i < cartitems.length; i++) {
+//     total += cartitems[i].price * cartitems[i].quantity;
+//   }
+//   total += taxrate * total;
+//   return total;
+// }
+
+// let cart = [
+//     {
+//         name: "Dr Cake",
+//         price: 30000,
+//         quantity:2,
+//     },{
+//         name: "Dr Date",
+//         price: 3000,
+//         quantity: 3,
+//     }
+// ];
+
+
+// const result =CalcuateTotal(cart, 0.23);
+// console.log(`Total: ${result}`);
