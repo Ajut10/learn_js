@@ -523,64 +523,80 @@
 
 // Dom
 // console.log(document.body);
-let result = document.getElementById("h1");
-// console.log(result);
-result.innerHTML ="i have a many people";
-result.style.color= "green";
-result.style.textAlign="center";
+// let result = document.getElementById("h1");
+// // console.log(result);
+// result.innerHTML ="i have a many people";
+// result.style.color= "green";
+// result.style.textAlign="center";
 
-let output = document.getElementsByClassName("myklass")[0];
-// console.log(output);
-output.innerHTML = "you have a few people";
-output.style.color= "blue";
-output.style.textAlign="center";
+// let output = document.getElementsByClassName("myklass")[0];
+// // console.log(output);
+// output.innerHTML = "you have a few people";
+// output.style.color= "blue";
+// output.style.textAlign="center";
 
-let put = document.getElementsByClassName("myklass");
-// console.log(output);
- put[1].innerHTML = "we have a few people";
- put[1].style.color= "brown";
- put[1].style.textAlign="center";
+// let put = document.getElementsByClassName("myklass");
+// // console.log(output);
+//  put[1].innerHTML = "we have a few people";
+//  put[1].style.color= "brown";
+//  put[1].style.textAlign="center";
 
-let show = document.getElementsByTagName("span");
-console.log(show[0]);
- show[0].innerHTML = "she has a few people";
- show[0].style.color= "brown";
- show[0].style.textAlign="center";
+// let show = document.getElementsByTagName("span");
+// console.log(show[0]);
+//  show[0].innerHTML = "she has a few people";
+//  show[0].style.color= "brown";
+//  show[0].style.textAlign="center";
  
- let down = document.getElementsByTagName("span");
- console.log(down[1]);
-  down[1].innerHTML = "he has a few people";
-  down[1].style.color= "brown";
-  down[1].style.textAlign="center";
+//  let down = document.getElementsByTagName("span");
+//  console.log(down[1]);
+//   down[1].innerHTML = "he has a few people";
+//   down[1].style.color= "brown";
+//   down[1].style.textAlign="center";
 
 
-let z =document.getElementsByName("password");
-console.log(z[0]);
+// let z =document.getElementsByName("password");
+// console.log(z[0]);
 
-let y =document.querySelector("#btnAdd");
-console.log(y);
-y.style.backgroundColor="blue";
-y.style.color="white";
-y.style.textAlign="center";
-y.setAttribute("Class","meroKlass");
-console.log(y.getAttribute("Class"));
-let h =document.querySelector(".btnDelete");
-console.log(h);
-h.style.backgroundColor="red";
-h.style.color="white";
-h.style.padding="4vmax";
-h.style.textAlign="center";
-function addTask(){
-let display =document.createElement("h1");
-display.innerHTML="this is neew";
-// document.body.append(display);
-document.body.prepend(display);
-}
-// addTask();
-y.onclick=addTask;
+// let y =document.querySelector("#btnAdd");
+// console.log(y);
+// y.style.backgroundColor="blue";
+// y.style.color="white";
+// y.style.textAlign="center";
+// y.setAttribute("Class","meroKlass");
+// console.log(y.getAttribute("Class"));
+// let h =document.querySelector(".btnDelete");
+// console.log(h);
+// h.style.backgroundColor="red";
+// h.style.color="white";
+// h.style.padding="4vmax";
+// h.style.textAlign="center";
+// function addTask(){
+// let display =document.createElement("h1");
+// display.innerHTML="this is neew";
+// // document.body.append(display);
+// document.body.prepend(display);
+// }
+// // addTask();
+// y.onclick=addTask;
 
-function removeTask(){
-    let h1 =document.querySelector("h1");
-    h1.remove();
-}
-h.onclick=removeTask;
+// function removeTask(){
+//     let h1 =document.querySelector("h1");
+//     h1.remove();
+// }
+// h.onclick=removeTask;
+
+let cons=document.querySelectorAll("button");
+// console.log(cons);
+cons[0].innerHTML="Press Me";
+cons[0].style.background="Red";
+cons[0].style.color="White";
+cons[0].style.padding="2 vmax 4vmax";
+cons[0].style.border="none";
+
+let output=document.querySelectorAll("button");
+output[1].innerHTML="Touch Me";
+output[1].style.background="blue";
+output[1].style.color="White";
+output[1].style.padding="2 vmax 4vmax";
+output[1].style.border="none";
+
