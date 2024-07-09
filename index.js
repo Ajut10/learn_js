@@ -585,18 +585,103 @@
 // }
 // h.onclick=removeTask;
 
-let cons=document.querySelectorAll("button");
-// console.log(cons);
-cons[0].innerHTML="Press Me";
-cons[0].style.background="Red";
-cons[0].style.color="White";
-cons[0].style.padding="2 vmax 4vmax";
-cons[0].style.border="none";
+// let cons=document.querySelectorAll("button");
+// // console.log(cons);
+// cons[0].innerHTML="Press Me";
+// cons[0].style.background="Red";
+// cons[0].style.color="White";
+// cons[0].style.padding="2 vmax 4vmax";
+// cons[0].style.border="none";
 
-let output=document.querySelectorAll("button");
-output[1].innerHTML="Touch Me";
-output[1].style.background="blue";
-output[1].style.color="White";
-output[1].style.padding="2 vmax 4vmax";
-output[1].style.border="none";
+// let output=document.querySelectorAll("button");
+// output[1].innerHTML="Touch Me";
+// output[1].style.background="blue";
+// output[1].style.color="White";
+// output[1].style.padding="2 vmax 4vmax";
+// output[1].style.border="none";
 
+// function myfunc(name,age){
+//   console.log(`Hello mero name ho ! ${name} ra mero umer ${age}` );  
+
+// }
+// myfunc("kuire",23);
+// const meFunc = (name,age)=>{
+//   console.log(`Hello mero name ho ! ${name} ra mero umer ${age}`);
+// }
+// meFunc("kuire",23);
+
+// advance array methods
+// let newArr=[4,5,32,3,5,243,43];
+
+//!find method
+// // const myfunc=(value,index)=>{
+// //   return value>6;
+// // };
+
+// // let output =newArr.find((value,index)=>{
+// //      return value>6;
+// //    } );
+
+// let output =newArr.find((value,index)=> value>6
+//     );
+// console.log(output);
+
+
+// const products = [{id:1,name:"Dr Mush", price:435,instock:true},
+//                   {id:2,name:"Dravour", price:432, instock:false},
+//                   {id:3,name:"Fale", price:23412, instock:true},
+//                   {id:4,name:"Rise", price:2354,instock:true}];
+
+// ans=products.find((value,index) => value.instock);
+// console.log(ans);
+
+
+// // !filter method
+// let newArr=[4,5,32,3,5,243,43];
+
+
+// let output =newArr.filter((value,index)=> value>6
+//     );
+// console.log(output);
+
+
+// const products = [{id:1,name:"Dr Mush", price:435,instock:true},
+//                   {id:2,name:"Dravour", price:432, instock:false},
+//                   {id:3,name:"Fale", price:23412, instock:true},
+//                   {id:4,name:"Rise", price:2354,instock:true}];
+
+// let ans=products.filter((value,index) => !value.instock);
+// console.log(ans);
+
+// // !some method
+// let newArr=[4,5,32,3,5,243,43];
+
+
+// let output =newArr.some((value,index)=> value>6
+//     );
+// console.log(output);
+
+
+// const products = [{id:1,name:"Dr Mush", price:435,instock:true},
+//                   {id:2,name:"Dravour", price:432, instock:false},
+//                   {id:3,name:"Fale", price:23412, instock:true},
+//                   {id:4,name:"Rise", price:2354,instock:true}];
+
+// let ans=products.some((value,index) => !value.instock);
+// console.log(ans);
+// !every method
+let newArr=[4,5,32,3,5,243,43];
+
+
+let output =newArr.every((value,index)=> value>6
+    );
+console.log(output);
+
+
+const products = [{id:1,name:"Dr Mush", price:435,instock:true},
+                  {id:2,name:"Dravour", price:432, instock:false},
+                  {id:3,name:"Fale", price:23412, instock:true},
+                  {id:4,name:"Rise", price:2354,instock:true}];
+
+let ans=products.every((value,index) => !value.instock);
+console.log(ans);
