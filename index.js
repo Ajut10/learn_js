@@ -670,10 +670,61 @@
 // let ans=products.some((value,index) => !value.instock);
 // console.log(ans);
 // !every method
-let newArr=[4,5,32,3,5,243,43];
+// let newArr=[4,5,32,3,5,243,43];
 
 
-let output =newArr.every((value,index)=> value>6
+// let output =newArr.every((value,index)=> value>6
+//     );
+// console.log(output);
+
+
+// const products = [{id:1,name:"Dr Mush", price:435,instock:true},
+//                   {id:2,name:"Dravour", price:432, instock:false},
+//                   {id:3,name:"Fale", price:23412, instock:true},
+//                   {id:4,name:"Rise", price:2354,instock:true}];
+
+// let ans=products.every((value,index) => !value.instock);
+// console.log(ans);
+
+// !foreach
+
+//  let newArr=[4,5,32,3,5,243,43];
+
+// let output =newArr.forEach((value,index)=> value*6
+//     );
+// console.log(output);
+
+
+// const products = [{id:1,name:"Dr Mush", price:435,instock:true},
+//                   {id:2,name:"Dravour", price:432, instock:false},
+//                   {id:3,name:"Fale", price:23412, instock:true},
+//                   {id:4,name:"Rise", price:2354,instock:true}];
+
+// let ans=products.forEach((value,index) => value.nawm);
+// console.log(ans);
+
+// !map
+//  let newArr=[4,5,32,3,5,243,43];
+
+// let output =newArr.map((value,index)=> value*2
+//     );
+// console.log(output);
+
+
+// const products = [{id:1,name:"Dr Mush", price:435,instock:true},
+//                   {id:2,name:"Dravour", price:432, instock:false},
+//                   {id:3,name:"Fale", price:23412, instock:true},
+//                   {id:4,name:"Rise", price:2354,instock:true}];
+
+// let ans=products.map((value,index) => value.name);
+// let display=document.createElement("h2");
+// display.innerText=ans;
+// document.body.append(display);
+// !reduce
+
+ let newArr=[4,5,32,3,5,243,43];
+
+let output =newArr.reduce((accum,curValue)=> accum+curValue
     );
 console.log(output);
 
@@ -683,5 +734,9 @@ const products = [{id:1,name:"Dr Mush", price:435,instock:true},
                   {id:3,name:"Fale", price:23412, instock:true},
                   {id:4,name:"Rise", price:2354,instock:true}];
 
-let ans=products.every((value,index) => !value.instock);
-console.log(ans);
+let ans=products.reduce((total,curValue) => total + curValue.price,0);
+let display=document.createElement("h2");
+display.innerText=ans;
+document.body.append(display);
+
+
