@@ -802,3 +802,61 @@
 //   console.log(e.target.value);
 //   console.log("change");
 // });
+
+// !Math Object
+
+// let num =4.7;
+// let ans =Math.round(num);
+// console.log(ans);
+
+// let output =Math.random();
+// console.log(output);
+
+// let ans =9;
+// let result =Math.sqrt(ans);
+// console.log(result);
+// let ans =4.9;
+// let result =Math.floor(ans);
+// console.log(result);
+// let ans =4.9;
+// let result =Math.ceil(ans);
+// console.log(result);
+
+
+// let num = 2;
+// let extonent=3;
+// let output=Math.pow(num,extonent);
+// console.log(output);
+
+// function subtract(a,b) {
+//   let result =a-b;
+//   return Math.abs(result);
+// };
+
+// let output= subtract(2,5);
+// console.log(output);
+
+
+// function GenerateOtp(){
+//   let Otp =Math.floor(100000+Math.random()*900000);
+//   return Otp;
+// }
+// let ans = GenerateOtp();
+// console.log(ans);
+
+
+// let num = Math.max(1,2,2,3,3,4,4,5,34);
+// console.log(num);
+// let um = Math.min(1,2,2,3,3,4,4,5,34);
+// console.log(um);
+
+
+
+let now = new Date().getFullYear();
+console.log(now);
+let nw = new Date().getMonth();
+console.log(nw);
+let ow = new Date().getDay();
+console.log(ow);
+// let now = new Date().getFullYear();
+// console.log(now);
