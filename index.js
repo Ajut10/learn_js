@@ -722,21 +722,83 @@
 // document.body.append(display);
 // !reduce
 
- let newArr=[4,5,32,3,5,243,43];
+//  let newArr=[4,5,32,3,5,243,43];
 
-let output =newArr.reduce((accum,curValue)=> accum+curValue
-    );
-console.log(output);
-
-
-const products = [{id:1,name:"Dr Mush", price:435,instock:true},
-                  {id:2,name:"Dravour", price:432, instock:false},
-                  {id:3,name:"Fale", price:23412, instock:true},
-                  {id:4,name:"Rise", price:2354,instock:true}];
-
-let ans=products.reduce((total,curValue) => total + curValue.price,0);
-let display=document.createElement("h2");
-display.innerText=ans;
-document.body.append(display);
+// let output =newArr.reduce((accum,curValue)=> accum+curValue
+//     );
+// console.log(output);
 
 
+// const products = [{id:1,name:"Dr Mush", price:435,instock:true},
+//                   {id:2,name:"Dravour", price:432, instock:false},
+//                   {id:3,name:"Fale", price:23412, instock:true},
+//                   {id:4,name:"Rise", price:2354,instock:true}];
+
+// let ans=products.reduce((total,curValue) => total + curValue.price,0);
+// let display=document.createElement("h2");
+// display.innerText=ans;
+// document.body.append(display);
+
+
+
+// let heading =document.getElementById("heading");
+// let box =document.getElementById("box1");
+// let btn =document.getElementById("btnClick");
+// let input =document.querySelector("input");
+
+
+// btn.style.backgroundColor="red";
+// btn.style.color="white";
+// btn.style.border="none";
+// btn.style.borderRadius="10px 5px";
+// btn.style.cursor="alias";
+// btn.style.padding="2vmax 4vmax";
+// btnClick.addEventListener("click",() =>{
+//   console.log("clicked");
+//   box.classList.add("classBox");
+//   // box.style.backgroundColor="grey";
+//   // box.style.borderRadius=" 100px";
+//   // box.style.padding="30px";
+//   // box.style.width="20%";
+//   // box.style.height="30%";
+//   // box.style.color="#FFFFFF";
+//   // box.style.textAlign="center";
+// });
+
+// box.addEventListener("mouseover", ()=>{
+//   btn.style.transform="scale(1.1)";
+//   heading.innerText="OLi ko boli ra banduk ko goli kahile phirta audaina";  
+//   heading.style.backgroundColor="Blue";
+//   heading.style.color="white";
+// })
+// box.addEventListener("mouseout", ()=>{
+//   btn.style.transform="";
+//   heading.innerText="";
+// })
+
+// btn.addEventListener("contextmenu", (e)=>{
+//   e.preventDefault();
+//   btn.style.backgroundColor="grey";
+// });
+
+// btn.addEventListener("dblclick", ()=>{
+//   document.body.style.backgroundColor="black";
+// });
+
+// btn.addEventListener("click", ()=>{
+//   document.body.style.backgroundColor="";
+// });
+
+// addEventListener("click", (e)=>{
+//   console.log(e.clientX);
+//   console.log(e.clientY);
+// }  
+// )
+// // window.addEventListener("contextmenu", (e)=>{
+// //   e.preventDefault();
+// // });
+
+// input.addEventListener("change", (e)=>{
+//   console.log(e.target.value);
+//   console.log("change");
+// });

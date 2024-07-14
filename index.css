@@ -3,3 +3,13 @@
     text-align: center;
     background-color: bisque;
 }
+.classBox{
+    background-color:grey;
+    padding: 30px;
+    width: 30%;
+    color: white;
+    cursor:alias;
+    border: none;
+    border-radius: 30px;
+    margin:40px 0;
+}
