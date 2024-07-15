@@ -852,11 +852,51 @@
 
 
 
-let now = new Date().getFullYear();
-console.log(now);
-let nw = new Date().getMonth();
-console.log(nw);
-let ow = new Date().getDay();
-console.log(ow);
 // let now = new Date().getFullYear();
 // console.log(now);
+// let nw = new Date().getMonth();
+// console.log(nw);
+// let ow = new Date().getDay();
+// console.log(ow);
+// let now = new Date().getFullYear();
+// console.log(now);
+
+
+let input =document.getElementById("myInput");
+let btnAdd=document.getElementById("btnAdd");
+let btnRemove=document.getElementById("btnRemove");
+
+// const myfunc=()=>{
+//     // alert(input.value);
+//     sessionStorage.setItem("key1",input.value);
+
+// };
+// btnAdd.addEventListener("click",myfunc);
+
+// if(sessionStorage.getItem("key1"))
+// alert(sessionStorage.getItem("key1"));
+
+
+// btnRemove.addEventListener("click",()=>{
+//     sessionStorage.removeItem("key1");
+//     sessionStorage.clearItem();
+// });
+// const myfunc=()=>{
+//     // alert(input.value);
+//     localStorage.setItem("key1",JSON.stringify({name:"Yamal",age:17,isMarried:true}));
+
+// };
+// btnAdd.addEventListener("click",myfunc);
+
+// if(localStorage.getItem("key1"))
+// alert(localStorage.getItem("key1"));
+
+
+// btnRemove.addEventListener("click",()=>{
+//     localStorage.removeItem("key1");
+//     localStorage.clearItem();
+// });
+
+// if(localStorage.getItem("key1")){
+//     console.log(JSON.parse(localStorage.getItem("key1")));
+// }
