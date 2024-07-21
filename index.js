@@ -862,9 +862,9 @@
 // console.log(now);
 
 
-let input =document.getElementById("myInput");
-let btnAdd=document.getElementById("btnAdd");
-let btnRemove=document.getElementById("btnRemove");
+// let input =document.getElementById("myInput");
+// let btnAdd=document.getElementById("btnAdd");
+// let btnRemove=document.getElementById("btnRemove");
 
 // const myfunc=()=>{
 //     // alert(input.value);
@@ -900,3 +900,49 @@ let btnRemove=document.getElementById("btnRemove");
 // if(localStorage.getItem("key1")){
 //     console.log(JSON.parse(localStorage.getItem("key1")));
 // }
+
+// const myFnc =()=>{
+//         console.log("hdsfjlkashf");
+// };
+// setTimeout(myFnc,2000);
+
+
+// setTimeout(()=>{
+//     console.log("hdsfjlkashf");
+// },2000);
+
+// setInterval(()=>{
+//     console.log("hdsfjlkash");
+// },1000);
+
+
+// const intervalId=setInterval(()=>{
+//     console.log("hdsfjlkashf");
+// },1000);
+// setTimeout(()=>{
+//     clearInterval(intervalId);},5000);
+
+// function UpdateClock() {
+//     const clock =document.querySelector('.clock');
+//     const now = new Date();
+//     const hours=now.getHours().toString().padStart(2,'0');
+//     const minute=now.getMinutes().toString().padStart(2,'0');
+//     const second=now.getSeconds().toString().padStart(2,'0');
+
+//     clock.innerHTML = `${hours}:${minute}:${second}`;
+// }
+// setInterval(UpdateClock,1000);
+
+
+
+// ! OOP
+
+function  Person(name, age, address){
+    this.name = name;
+    this.age = age;
+    this.address = address;
+}
+
+const person1 =new Person("Ram",23,"asdf");
+console.log(person1);
+

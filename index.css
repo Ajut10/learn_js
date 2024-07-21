@@ -13,3 +13,9 @@
     border-radius: 30px;
     margin:40px 0;
 }
+
+.clock{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 20px;
+}
