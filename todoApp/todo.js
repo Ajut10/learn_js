@@ -9,6 +9,7 @@ let container = document.querySelector(".container");
 
 
 const tasks =localStorage.getItem('task')?JSON.parse(localStorage.getItem('task')) : [];
+showAllTasks();
 
 function showAllTasks() {
     tasks.forEach((value,index)=>{
@@ -35,7 +36,7 @@ function showAllTasks() {
             tasks.splice(index,1);
     localStorage.setItem('task', JSON.stringify(tasks));
 
-            showAllTask();
+            showAllTasks();
         });
         div.append(btn);
         container.append(div);
