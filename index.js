@@ -937,12 +937,74 @@
 
 // ! OOP
 
-function  Person(name, age, address){
-    this.name = name;
-    this.age = age;
-    this.address = address;
+// function  Person(name, age, address){
+//     this.name = name;
+//     this.age = age;
+//     this.address = address;
+
+//     this.greeting = function(){
+//         let greet=`hello ${this.name}. ur ${this.age} from '${this.address}`;
+//         return greet;
+// };
+// }
+
+// const person1 =new Person("Ram",23,"asdf");
+// const person2 =new Person("Ramo",53,"dfdff");
+// console.log(person1,person2);
+// console.log(person1.greeting());
+
+
+function BankAccount(customerName,balance=0){
+    this.customerName = customerName;
+    this.balance = balance;
+    this.accountNumber = Date.now();
+    this.deposit=function(amount){
+        this.balance+=amount;
+    }
+    this.withdraw=function(amount){
+        this.balance-=amount;
+    }
 }
 
-const person1 =new Person("Ram",23,"asdf");
-console.log(person1);
+const addform=document.querySelector('#addForm');
+const customerName =document.querySelector('#customerName');
+const balance =document.querySelector('#balance');
+
+
+const depositform = document.querySelector('#depositForm');
+const accountNumber = document.querySelector('#accountNumber');
+const amount = document.querySelector('#amount');
+
+const withdrawform = document.querySelector('#withdrawForm');
+const withAccountNumber = document.querySelector('#withAccountNumber');
+const withAmount = document.querySelector('#withAmount');
+
+console.log(withAccountNumber);
+let accounts =[];
+addform.addEventListener("submit", (e)=>{
+    e.preventDefault();
+    let account =new BankAccount(customerName.value,+balance.value);
+    accounts.push(account);
+    console.log(accounts);
+});
+
+
+depositform.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    let account = accounts.find((account)=>account.accountNumber === +accountNumber.value);
+    account.deposit(+amount.value);
+    console.log(accounts);
+})
+
+withdrawform.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    let account = accounts.find((account)=>account.accountNumber === +withAccountNumber.value);
+    account.withdraw(+withAmount.value);
+    console.log(accounts);
+})
+
+// const bankaccount = new BankAccount("Ramu",10000);
+// bankaccount.deposit(40000);
+// bankaccount.withdraw(4000);
+// console.log(bankaccount);
 
