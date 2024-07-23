@@ -1045,8 +1045,34 @@ class BankAccount{
         this.balance -= amount;
     }
 }
+class CurrentAccount extends BankAccount{
+    constructor(customerName, balance=0){
+        super(customerName, balance);
+    }
+    takeBusinessLoan(amount ,taxrate){
+        let ans = amount + (amount *taxrate)/100;
+        console.log(`Your Business Loan is Rs.${ans} `)
+    }
+    
+}
+class SavingAccount extends BankAccount{
+    constructor(customerName, balance=0){
+        super(customerName, balance);
+    }
+    takePersonalLoan(amount ,taxrate){
+        let ans = amount + (amount *taxrate)/100;
+        console.log(`Your Saving Loan is Rs.${ans} `)
+    }
+    
+}
 
-const RamuAccount=new BankAccount("Ramu",40000);
-const SantuAccount=new BankAccount("Santu",40000);
+const RamuAccount=new CurrentAccount("Ramu",40000);
+const SantuAccount=new CurrentAccount("Santu",40000);
+const DipuAccount=new SavingAccount("Dipu", 3000);
 RamuAccount.deposit(23423);
+DipuAccount.takePersonalLoan(50000000,6);
+SantuAccount.takeBusinessLoan(23423,2);
 console.log(RamuAccount,SantuAccount);
+ 
+
+
