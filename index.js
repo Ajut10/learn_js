@@ -1109,3 +1109,31 @@
 // console.log(balendranAccount,chinikiajiAccount);
 
 
+class configure{
+    static username = "admin";
+    static email = "admin@gmail.com";
+
+    
+}
+console.log(configure.username, configure.email);
+
+
+class User{
+    constructor(name, address,age){
+        this.name = name;
+        this.address = address;
+        this.age = age;
+    }
+    static compareage(a,b){
+        return a.age - b.age;
+    }
+    
+}
+let user1=new User("Rainbow","Kathmandu",2);
+let user2=new User("Leo","Kathmandu",9);
+let user3=new User("Sky","Gorkha",5);
+console.log(user1,user2,user3);
+let users = [user1,user2,user3];
+// users.sort((a,b)=> a.age - b.age)   //on the basis of age 
+users.sort(User.compareAge)   //to compare age using static
+console.log(users);
