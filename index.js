@@ -1030,49 +1030,82 @@
 // ramAccount.deposit(2434234);
 // console.log(ramAccount,johnAccount);
 
+// inheritance
 
-
-class BankAccount{
-    constructor(customerName, balance=0){
-        this.customerName = customerName;
-        this.balance = balance;
-        this.accountNumber = Math.floor(Math.random()*10000000);
-    }
-    deposit(amount){
-        this.balance += amount;
-    }
-    withdraw(amount){
-        this.balance -= amount;
-    }
-}
-class CurrentAccount extends BankAccount{
-    constructor(customerName, balance=0){
-        super(customerName, balance);
-    }
-    takeBusinessLoan(amount ,taxrate){
-        let ans = amount + (amount *taxrate)/100;
-        console.log(`Your Business Loan is Rs.${ans} `)
-    }
+// class BankAccount{
+//     constructor(customerName, balance=0){
+//         this.customerName = customerName;
+//         this.balance = balance;
+//         this.accountNumber = Math.floor(Math.random()*10000000);
+//     }
+//     deposit(amount){
+//         this.balance += amount;
+//     }
+//     withdraw(amount){
+//         this.balance -= amount;
+//     }
+// }
+// class CurrentAccount extends BankAccount{
+//     constructor(customerName, balance=0){
+//         super(customerName, balance);
+//     }
+//     takeBusinessLoan(amount ,taxrate){
+//         let ans = amount + (amount *taxrate)/100;
+//         console.log(`Your Business Loan is Rs.${ans} `)
+//     }
     
-}
-class SavingAccount extends BankAccount{
-    constructor(customerName, balance=0){
-        super(customerName, balance);
-    }
-    takePersonalLoan(amount ,taxrate){
-        let ans = amount + (amount *taxrate)/100;
-        console.log(`Your Saving Loan is Rs.${ans} `)
-    }
+// }
+// class SavingAccount extends BankAccount{
+//     constructor(customerName, balance=0){
+//         super(customerName, balance);
+//     }
+//     takePersonalLoan(amount ,taxrate){
+//         let ans = amount + (amount *taxrate)/100;
+//         console.log(`Your Saving Loan is Rs.${ans} `)
+//     }
     
-}
+// }
 
-const RamuAccount=new CurrentAccount("Ramu",40000);
-const SantuAccount=new CurrentAccount("Santu",40000);
-const DipuAccount=new SavingAccount("Dipu", 3000);
-RamuAccount.deposit(23423);
-DipuAccount.takePersonalLoan(50000000,6);
-SantuAccount.takeBusinessLoan(23423,2);
-console.log(RamuAccount,SantuAccount);
+// const RamuAccount=new CurrentAccount("Ramu",40000);
+// const SantuAccount=new CurrentAccount("Santu",40000);
+// const DipuAccount=new SavingAccount("Dipu", 3000);
+// RamuAccount.deposit(23423);
+// DipuAccount.takePersonalLoan(50000000,6);
+// SantuAccount.takeBusinessLoan(23423,2);
+// console.log(RamuAccount,SantuAccount);
+
+
+//! encapsulation
+
+// class BankAccount{
+//     customerName;
+//     #balance=0;
+//     accountNumber;
+//     constructor(customerName, balance =0){
+//         this.customerName = customerName;
+//         this.#balance = balance;
+//         this.accountNumber = Date.now();
+//     }
+//     deposit(amount){
+//         this.#balance += amount;
+//     }
+
+//     withdraw(amount){
+//         this.#balance -= amount;
+//     }
+//     setBalance(amount){
+//      this.#balance = amount;
+//     }
+//     getBalance(){
+//         return this.#balance;
+//     }
+// }
  
+
+// const chinikiajiAccount = new BankAccount("Chinikaji", 4000);
+// const balendranAccount = new BankAccount("Balendran",5000);
+// balendranAccount.setBalance(7888);
+// console.log(balendranAccount.getBalance());
+// console.log(balendranAccount,chinikiajiAccount);
 
 
