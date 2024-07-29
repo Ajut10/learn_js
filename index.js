@@ -1109,31 +1109,120 @@
 // console.log(balendranAccount,chinikiajiAccount);
 
 
-class configure{
-    static username = "admin";
-    static email = "admin@gmail.com";
+// class configure{
+//     static username = "admin";
+//     static email = "admin@gmail.com";
 
     
-}
-console.log(configure.username, configure.email);
+// }
+// console.log(configure.username, configure.email);
 
 
-class User{
-    constructor(name, address,age){
-        this.name = name;
-        this.address = address;
-        this.age = age;
-    }
-    static compareage(a,b){
-        return a.age - b.age;
-    }
+// class User{
+//     constructor(name, address,age){
+//         this.name = name;
+//         this.address = address;
+//         this.age = age;
+//     }
+//     static compareage(a,b){
+//         return a.age - b.age;
+//     }
     
-}
-let user1=new User("Rainbow","Kathmandu",2);
-let user2=new User("Leo","Kathmandu",9);
-let user3=new User("Sky","Gorkha",5);
-console.log(user1,user2,user3);
-let users = [user1,user2,user3];
-// users.sort((a,b)=> a.age - b.age)   //on the basis of age 
-users.sort(User.compareAge)   //to compare age using static
-console.log(users);
+// }
+// let user1=new User("Rainbow","Kathmandu",2);
+// let user2=new User("Leo","Kathmandu",9);
+// let user3=new User("Sky","Gorkha",5);
+// console.log(user1,user2,user3);
+// let users = [user1,user2,user3];
+// // users.sort((a,b)=> a.age - b.age)   //on the basis of age 
+// users.sort(User.compareAge)   //to compare age using static
+// console.log(users);
+
+//! asynchronus
+// console.log("users");
+// function Display(){
+//     for (let i=0;i<100;i++){
+//         console.log(i);
+//     }
+// }
+
+// Display();
+// setTimeout(()=>{
+//     alert("4sec ko bhai");
+// },4000);
+
+// console.log("asdggh");
+
+
+// !!!!!!!!!!!!!!!CallBack!!!!!!!!!!!!!!!!!!
+// kunnai pani function ko argument ma function pass garyo vane callback
+
+// function Sum(a,b,cb){
+//     const ans=a+b;
+//     cb(ans);
+// }
+
+// function Display(result){
+//     const h1 = document.createElement("h1");
+//     h1.innerText=`The sum of resultis ${result}`;
+//     document.body.append(h1);
+// }
+
+// Sum(4,9,Display);
+
+
+// let arr =[4,5,6,7,8,9,1];
+
+// function Calcuate(arr=[],cb){
+//     let ans=[];
+//     for(let i=0;i<arr.length;i++){
+//         const element= cb(arr[i]);
+//         ans.push(element);
+//     }
+//     console.log(ans);
+// }
+
+// // function Multiply(a){
+// //     return a*10;
+// // }
+// function Divide(a){
+//     return a/10;
+// }
+
+// const Multiply= (a)=>{
+//     return a*10;
+// }
+// Calcuate(arr,Multiply);
+// Calcuate(arr,Divide);
+// Calcuate(arr,(a)=> a*10);
+// Calcuate(arr, (a)=> a+10)
+
+
+// let products =[];
+
+// const AddProduct=(cb)=>{
+//     setTimeout(()=>{
+//         products.push({
+//             id:1,name:"Dr John",price:10,instock:false
+//         },
+//         {id:2 ,name:"Papa",price:10,instock:true});
+//         console.log(products);
+//         setTimeout(()=>console.log("asdd"),4000);
+//         cb();
+//     },4000);
+// };
+
+// const DisplayProduct= ()=>{
+//     setTimeout(()=>{
+//         products.forEach((product)=>{
+//             const h1 = document.createElement("h1");
+//             h1.innerHTML = product.name;
+//             document.body.appendChild(h1);
+//         });
+//     },1000);
+// };
+// AddProduct(DisplayProduct);
+
+
+// !!Promises
+// 3 things in promises - pending fulfilled rejected
