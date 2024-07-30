@@ -1226,3 +1226,50 @@
 
 // !!Promises
 // 3 things in promises - pending fulfilled rejected
+
+// const res =new Promise((resolve, rejected)=>{
+//     let sucess =true;
+//     if(sucess){
+//         resolve("promise fulfilled");
+        
+//     }else{
+
+//         rejected("promise rejected");
+//     }
+// });
+// res.then((param)=>console.log(param)).catch((error)=>console.log(error)); 
+
+
+// const fetchedData =()=>{
+//     fetch(`https://catfact.ninja/fact`).then((res)=>res.json())
+//     .then((data)=>{
+//         const h1 =document.createElement('h1');
+//         h1.innerHTML=data.fact;
+//     document.body.append(h1)}).catch((error)=>console.log(error));
+// }
+// fetchedData();
+
+
+// async and await
+const fetchData =async ()=>{
+    try {
+        
+        const res = await fetch(`https://catfact.ninja/facts`);
+        const data = await res.json();
+        const facts = data.data;
+        facts.forEach((value,index) => {
+            const h1 = document.createElement('h1');
+            h1.innerText=value.fact;
+            document.body.append(h1);
+            
+        });
+        console.log(facts);
+        //  const h1 = document.createElement('h1');
+        //  h1.innerHTML = data.fact;
+        //  document.body.appendChild(h1);
+     
+    } catch (error) {
+      console.log(error);  
+    }
+}
+fetchData();

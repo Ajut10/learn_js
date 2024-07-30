@@ -1,0 +1,21 @@
+{
+    "person": {
+        "name":"Balendra Shah",
+        "age": 24,
+        "isMarried":true
+    },
+    "products":[
+        {
+        "id":1,
+        "producttitle":"Bokas Daura",
+        "price":45000,
+        "instock":true
+        },
+        {
+        "id":2,
+        "producttitle":"Numa Daura",
+        "price":5000,
+        "instock":false
+        }
+    ]
+    }
